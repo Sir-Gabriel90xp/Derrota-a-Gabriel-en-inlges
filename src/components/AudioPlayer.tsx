@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-// Playlist: the uploaded files were renamed to simpler names for reliability
-const PLAYLIST = ["/track1.mp3", "/track2.mp3"];
+// Playlist: play only track2 (track1 removed)
+const PLAYLIST = ["/track2.mp3"];
 
 export default function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
