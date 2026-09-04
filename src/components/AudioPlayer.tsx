@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-// Playlist: ensure the filenames match the files you placed in /public
-const PLAYLIST = [
-  "/The Black Eyed Peas - Pump It (Official Music Video).mp3",
-  "/アイナジエンド-革命道中-OnTheWayTHEFIRSTTAKE.mp3",
-];
+// Playlist: the uploaded files were renamed to simpler names for reliability
+const PLAYLIST = ["/track1.mp3", "/track2.mp3"];
 
 export default function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);

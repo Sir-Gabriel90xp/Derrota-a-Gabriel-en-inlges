@@ -77,6 +77,20 @@ npm run dev       # or: bun run dev
 
 Open the URL printed in the terminal (default http://localhost:8080).
 
+## Add background music (autoplay)
+
+This project includes a simple audio player that tries to autoplay a looping
+track when the app loads. To enable it:
+
+1. Place your audio file at `public/music.mp3` (recommended: short loop, MP3 or OGG).
+2. The app will attempt to play it automatically; if the browser blocks autoplay
+  it will show a "Click to play audio" overlay — the user must interact once.
+3. Users can mute/unmute via the button at the bottom-right; the preference is
+  saved to `localStorage`.
+
+If you want to change the file path, edit `src/components/AudioPlayer.tsx` and
+update the `src` attribute of the `<audio>` element.
+
 ## Production build
 
 ```bash
